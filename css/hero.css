@@ -1,0 +1,78 @@
+:root {
+  --main-color: #c5d4cf;
+  --main-text-color: #4d524c;
+}
+
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", "Gill Sans", "Gill Sans MT", Calibri,
+    sans-sarif;
+  padding: 20px;
+}
+header {
+  background-color: var(--main-color);
+  height: 600px;
+}
+
+header > .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px;
+  margin-bottom: 86px;
+}
+
+.reusable-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navigation > .navigation-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.navigation-links > a {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--main-text-color);
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  padding: 8px 25px;
+}
+
+.navigation-links > a:link,
+.navigation-links > a:visited {
+  border: 1px solid transparent;
+}
+
+.navigation-links > a:hover,
+.navigation-links > a:active {
+  border: 2px solid var(--main-text-color);
+}
+
+.reusable-flex > h1 {
+  font-size: 84px;
+  color: var(--main-text-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.reusable-flex > h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #4d524cd0;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #4d524c;
+}
