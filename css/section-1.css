@@ -1,0 +1,41 @@
+:root {
+  --main-color: #c5d4cf;
+  --main-text-color: #4d524c;
+}
+
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", "Gill Sans", "Gill Sans MT", Calibri,
+    sans-sarif;
+}
+.section-1 {
+  margin-top: 148px;
+}
+
+.section-1 > .section-1-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-border {
+  border: 1.5px solid var(--main-text-color);
+  background-color: var(--main-text-color);
+  width: 60px;
+}
+
+h6 {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
