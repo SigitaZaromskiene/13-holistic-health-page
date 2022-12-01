@@ -79,3 +79,26 @@ header > .navigation {
 .container-all-elements {
   width: 100%;
 }
+
+@media (max-width: 550px) {
+  .navigation {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .navigation > img {
+    margin-top: 50px;
+    box-shadow: 15px 1px 20px rgb(0 0 0 / 25%);
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 422px) {
+  .header .navigation-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header .nav-flex > h1 {
+    font-size: 42px;
+  }
+}

@@ -70,6 +70,7 @@ h6 {
 @media (max-width: 1480px) {
   .section-1 > .four-elements {
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
     row-gap: 50px;
   }
 }
@@ -95,5 +96,27 @@ h6 {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 811px) {
+  .section-1 > .four-elements {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .container-text > .margin-down {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .section-1 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 422px) {
+  .section-1 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
