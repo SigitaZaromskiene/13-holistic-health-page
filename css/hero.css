@@ -3,26 +3,22 @@
   --main-text-color: #4d524c;
 }
 
-
 body,
 body * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   vertical-align: top;
-  
 }
-
 body {
   font-family: "Gill Sans", "Gill Sans MT", "Gill Sans", "Gill Sans MT", Calibri,
     sans-sarif;
-    width:100vh;
 }
-  
-header {
+
+.header {
   background-color: var(--main-color);
   height: 600px;
-  
+  background-color: var(--main-color);
 }
 
 header > .navigation {
@@ -34,7 +30,6 @@ header > .navigation {
 }
 
 .nav-flex {
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,7 +76,6 @@ header > .navigation {
   padding-bottom: 15px;
 }
 
-@media (max-width: 1000px) {
-  
-  }
+.container-all-elements {
+  width: 100%;
 }
