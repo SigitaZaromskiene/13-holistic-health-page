@@ -1,0 +1,122 @@
+:root {
+  --main-color: #c5d4cf;
+  --main-text-color: #4d524c;
+}
+
+.section-1 {
+  margin-top: 148px;
+  margin-bottom: 148px;
+}
+
+.section-1 > .section-1-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 84px;
+}
+
+.small-border {
+  border: 1.5px solid var(--main-text-color);
+  background-color: var(--main-text-color);
+  width: 60px;
+}
+
+h6 {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.small-img {
+  height: 250px;
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.section-1 > .four-elements {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  gap: 25px;
+
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.element {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.253);
+}
+
+.element:hover {
+  transform: scale(1.1);
+}
+
+.element > .element-text {
+  font-size: 16px;
+  padding: 20px 50px 30px 50px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1480px) {
+  .section-1 > .four-elements {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 50px;
+  }
+}
+
+@media (max-width: 840px) {
+  .section-1 > .four-elements {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 60px;
+  }
+
+  .section-1 {
+    margin-right: 132px;
+    margin-left: 132px;
+  }
+
+  .container-text > .small-border {
+    margin-bottom: 5px;
+  }
+
+  .section-2-containers > .container-text {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 811px) {
+  .section-1 > .four-elements {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .container-text > .margin-down {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .section-1 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 422px) {
+  .section-1 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
